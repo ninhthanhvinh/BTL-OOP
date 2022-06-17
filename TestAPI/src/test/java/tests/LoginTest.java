@@ -37,7 +37,7 @@ public class LoginTest {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("email", "");
+		request.put("email", "ninhthanhvinh@gmail.com");
 		request.put("password", "123456");
 		
 		Response response = given().contentType(JSON).

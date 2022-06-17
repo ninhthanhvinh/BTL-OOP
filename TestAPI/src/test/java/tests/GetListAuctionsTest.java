@@ -1,6 +1,9 @@
 package tests;
 
 import static io.restassured.RestAssured.*;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertNull;
+
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -14,7 +17,7 @@ public class GetListAuctionsTest {
 	
 	Map<String, Object> map = new HashMap<String, Object>();
 	
-	
+	String ACCESS_TOKEN = null;
 	
 	
 	private final String JSON = "application/json";
@@ -24,10 +27,21 @@ public class GetListAuctionsTest {
 	public void Test01() {
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		Response res = given().when().
-			get("/auctions");
+		JSONObject req = new JSONObject();
+		
+		req.put("access_token", ACCESS_TOKEN);
+		req.put("index", "2");
+		req.put("count", "5");
+		
+		Response res = given().
+						contentType(JSON).
+				       body(req.toJSONString()).
+				       	when().
+				       post("/auctions");
 		res.then().statusCode(200);
-			
+		System.out.println(res.getStatusCode());
+		assertNotNull(res);
+		
 	}
 	
 }
