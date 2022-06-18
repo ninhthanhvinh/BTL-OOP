@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-17T15:29:35 ICT" name="Default suite" finished-at="2022-06-17T15:29:39 ICT" duration-ms="4161">
+  <suite started-at="2022-06-18T11:23:03 ICT" name="Command line suite" finished-at="2022-06-18T11:23:15 ICT" duration-ms="11458">
     <groups>
     </groups>
-    <test started-at="2022-06-17T15:29:35 ICT" name="Default test" finished-at="2022-06-17T15:29:39 ICT" duration-ms="4161">
+    <test started-at="2022-06-18T11:23:03 ICT" name="Command line test" finished-at="2022-06-18T11:23:15 ICT" duration-ms="11458">
       <class name="tests.LoginTest">
-        <test-method signature="Test01()[pri:0, instance:tests.LoginTest@16a0ee18]" started-at="2022-06-17T15:29:35 ICT" name="Test01" finished-at="2022-06-17T15:29:39 ICT" duration-ms="4109" status="FAIL">
-          <exception class="org.opentest4j.AssertionFailedError">
+        <test-method signature="Test01()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:03 ICT" name="Test01" finished-at="2022-06-18T11:23:08 ICT" duration-ms="4368" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected: <1000> but was: <1001>]]>
+              <![CDATA[Cannot invoke "java.util.LinkedHashMap.get(Object)" because "data" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.opentest4j.AssertionFailedError: expected: <1000> but was: <1001>
-at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
-at tests.LoginTest.Test01(LoginTest.java:52)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.get(Object)" because "data" is null
+at tests.LoginTest.Test01(LoginTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,16 +40,75 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 at org.testng.TestNG.runSuites(TestNG.java:1099)
 at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at demo.Main.main(Main.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01 -->
+        <test-method signature="Test02()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:08 ICT" name="Test02" finished-at="2022-06-18T11:23:09 ICT" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test02 -->
+        <test-method signature="Test03()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:09 ICT" name="Test03" finished-at="2022-06-18T11:23:11 ICT" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test03 -->
+        <test-method signature="Test04()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:11 ICT" name="Test04" finished-at="2022-06-18T11:23:12 ICT" duration-ms="1410" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[expected: <1001> but was: <1002>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: expected: <1001> but was: <1002>
+at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+at tests.LoginTest.Test04(LoginTest.java:133)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at demo.Main.main(Main.java:19)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.opentest4j.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test01 -->
+        </test-method> <!-- Test04 -->
+        <test-method signature="Test05()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:12 ICT" name="Test05" finished-at="2022-06-18T11:23:13 ICT" duration-ms="1364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test05 -->
+        <test-method signature="Test06()[pri:0, instance:tests.LoginTest@48fa0f47]" started-at="2022-06-18T11:23:13 ICT" name="Test06" finished-at="2022-06-18T11:23:15 ICT" duration-ms="1380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test06 -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
 </testng-results>

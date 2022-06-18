@@ -1,6 +1,7 @@
 package tests;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.*;
 import org.json.simple.JSONObject;
@@ -27,7 +28,12 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class LoginTest {
+	
+	public static String ACCESS_TOKEN;
+	
 	private final String JSON = "application/json";
+	
+
 	@Test
 	public void Test01() {
 		
@@ -49,7 +55,12 @@ public class LoginTest {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1001);
+		LinkedHashMap<String, String> data = jpath.get("data");
+		
+		String ACCESS_TOKEN = data.get("access_token");
+		
+		System.out.println(ACCESS_TOKEN);
+		assertEquals(code, 1000);
 	}
 	@Test
 public void Test02() {
@@ -69,6 +80,10 @@ public void Test02() {
 			post("/login");
 		response.then().statusCode(200).toString();
 		System.out.println(response.getBody().asString());
+		JsonPath jpath = response.jsonPath();
+		int code = jpath.getInt("code");
+		System.out.println(ACCESS_TOKEN);
+		assertEquals(code, 1001);
 		}
 	@Test
 	public void Test03() {
@@ -91,7 +106,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1000);
+		assertEquals(code, 1002);
 	}
 	
 	@Test
@@ -115,7 +130,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1000);
+		assertEquals(code, 1002);
 	}
 	
 	@Test
@@ -127,7 +142,7 @@ public void Test02() {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("email", "thanh12345gmail.com");
+		request.put("email", "");
 		request.put("password", "123456");
 		
 		Response response = given().contentType(JSON).
@@ -139,7 +154,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1000);
+		assertEquals(code, 1001);
 	}
 	
 	@Test
@@ -152,7 +167,7 @@ public void Test02() {
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
 		request.put("email", "thanh12345gmail.com");
-		request.put("password", "123456");
+		request.put("password", "");
 		
 		Response response = given().contentType(JSON).
 			body(request.toJSONString()).
@@ -163,8 +178,9 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1000);
+		assertEquals(code, 1001);
 	}
+	
 }
 
 

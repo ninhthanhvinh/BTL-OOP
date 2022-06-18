@@ -17,7 +17,7 @@ public class GetListAuctionsTest {
 	
 	Map<String, Object> map = new HashMap<String, Object>();
 	
-	String ACCESS_TOKEN = null;
+	String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
 	
 	
 	private final String JSON = "application/json";
