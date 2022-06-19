@@ -30,7 +30,9 @@ public class EditTest {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		String ACCESS_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9uLWFwcDMuaGVyb2t1YXBwLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTUyMDk5NiwiZXhwIjoxNjU1ODgwOTk2LCJuYmYiOjE2NTU1MjA5OTYsImp0aSI6InljZHFCUDJEUk52S29BWDgiLCJzdWIiOjU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.aq-TBj-8ZDkt8l4TukjLlMGGBwzGCDnSV4YATED5WRs";
+		String ACCESS_TOKEN =
+	
+		"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9uLWFwcDMuaGVyb2t1YXBwLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTUyMDk5NiwiZXhwIjoxNjU1ODgwOTk2LCJuYmYiOjE2NTU1MjA5OTYsImp0aSI6InljZHFCUDJEUk52S29BWDgiLCJzdWIiOjU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.aq-TBj-8ZDkt8l4TukjLlMGGBwzGCDnSV4YATED5WRs";
 		
 		request.put("email", "ninhvinh1@gmail.com");
 		request.put("password", "123456");

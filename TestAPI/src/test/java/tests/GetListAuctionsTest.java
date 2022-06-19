@@ -29,11 +29,10 @@ public class GetListAuctionsTest {
 		
 		JSONObject req = new JSONObject();
 		
-		req.put("access_token", ACCESS_TOKEN);
 		req.put("index", "2");
 		req.put("count", "5");
 		
-		Response res = given().
+		Response res = given().header("Authorization", "bearer" + "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9uLWFwcDMuaGVyb2t1YXBwLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTU0NTA3NCwiZXhwIjoxNjU1OTA1MDc0LCJuYmYiOjE2NTU1NDUwNzQsImp0aSI6ImhEcGtHUk5NY0pqOVhHSkMiLCJzdWIiOjY1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pcPbuPpfUQA2rlGDpvjTlkjL5Bad6kGcFw7krWnn2n8").
 						contentType(JSON).
 				       body(req.toJSONString()).
 				       	when().

@@ -118,7 +118,7 @@ public class SignUpTest {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		req.put("email", "ninhthanhvinh@gmail.com");
+		req.put("email", "ninhvinh1@gmail.com");
 		req.put("password", "123456");
 		req.put("re_pass", "");
 		req.put("address", "ThuyDan");
