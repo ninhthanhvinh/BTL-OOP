@@ -36,3 +36,4 @@ public class CreateAuctionTest {
 		System.out.println(response.getBody().asString());
 	
 }
+}

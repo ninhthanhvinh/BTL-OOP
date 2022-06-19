@@ -8,6 +8,8 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import demo.Main;
+
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -41,7 +43,7 @@ public class LoginTest {
 		
 		JSONObject request = new JSONObject();
 		
-		baseURI = "https://auction-app3.herokuapp.com/api";
+		baseURI = Main.baseuri;
 		
 		request.put("email", "ninhthanhvinh@gmail.com");
 		request.put("password", "123456");
