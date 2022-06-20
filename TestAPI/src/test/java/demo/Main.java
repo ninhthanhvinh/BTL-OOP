@@ -2,11 +2,19 @@ package demo;
 
 
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -43,7 +51,7 @@ public class Main extends Application {
 		Label firstLabel = new Label("Choose your base URI:");
 		firstLabel.setFont(Font.font("Times New Roman", 24));
 		firstLabel.setTextAlignment(TextAlignment.LEFT);
-		firstLabel.setTextFill(Color.web("#042d63"));
+		firstLabel.setTextFill(Color.web("#eeff03"));
 		
 		ChoiceBox<String> choiceBox = new ChoiceBox<>();
 		
@@ -69,7 +77,7 @@ public class Main extends Application {
 		Label secondLabel = new Label("Choose your API that need to test:");
 		secondLabel.setFont(Font.font("Times New Roman", 24));
 		secondLabel.setTextAlignment(TextAlignment.LEFT);
-		secondLabel.setTextFill(Color.web("#042d63"));
+		secondLabel.setTextFill(Color.web("#eeff03"));
 		
 		HBox layout2 = new HBox();
 		
@@ -92,11 +100,19 @@ public class Main extends Application {
 			else if(API == "logout") {tloc.callLogOutTest();}
 		});
 		
+		Image image = new Image("https://img.freepik.com/free-photo/digital-cyberspace-with-particles-digital-data-network-connections_24070-1303.jpg?w=2000");
+		BackgroundImage bgImage = new BackgroundImage(image, 
+				BackgroundRepeat.NO_REPEAT, 
+				BackgroundRepeat.NO_REPEAT,
+				BackgroundPosition.CENTER, 
+				new BackgroundSize(100, 100, true, true, true, true));
+		Background bg = new Background(bgImage);
+		layout.setBackground(bg);
 		layout.getChildren().addAll(menuLabel, firstLabel, layout1, secondLabel, layout2, button);
 		layout.setSpacing(10);
 		layout.setPadding(new Insets(10));
 		
-		Scene scene = new Scene(layout, 600, 300);
+		Scene scene = new Scene(layout, 960, 540);
 		
 		window.setScene(scene);
 		window.show();
