@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.*;
 import javafx.scene.control.Button;
@@ -38,7 +39,13 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		window = primaryStage;
+		Parent root = FXMLLoader.load(getClass().getResource("UIBuild.fxml"));
+		primaryStage.setTitle("AutomationTesting");
+		primaryStage.setScene( new Scene(root,960, 540));
+		primaryStage.show();
+		
+		
+		/*window = primaryStage;
 		window.setTitle("Automation Restful API Test");
 		
 		VBox layout = new VBox();
@@ -158,6 +165,6 @@ public class Main extends Application {
 		case "Log Out":
 			API = "logout";
 			break;
-	}
+	}*/
 }
 }
