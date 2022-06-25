@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-25T18:07:47 ICT" name="Command line suite" finished-at="2022-06-25T18:07:49 ICT" duration-ms="2432">
+  <suite started-at="2022-06-25T19:46:35 ICT" name="Command line suite" finished-at="2022-06-25T19:46:51 ICT" duration-ms="16472">
     <groups>
     </groups>
-    <test started-at="2022-06-25T18:07:47 ICT" name="Command line test" finished-at="2022-06-25T18:07:49 ICT" duration-ms="2432">
-      <class name="com.tvinh.test1.EditTest">
-        <test-method signature="TestCase01()[pri:0, instance:com.tvinh.test1.EditTest@56df76ca]" started-at="2022-06-25T18:07:47 ICT" name="TestCase01" finished-at="2022-06-25T18:07:49 ICT" duration-ms="2412" status="FAIL">
-          <exception class="io.restassured.path.json.exception.JsonPathException">
+    <test started-at="2022-06-25T19:46:35 ICT" name="Command line test" finished-at="2022-06-25T19:46:51 ICT" duration-ms="16472">
+      <class name="com.tvinh.test1.LoginTest">
+        <test-method signature="Test01()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:35 ICT" name="Test01" finished-at="2022-06-25T19:46:44 ICT" duration-ms="9427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01 -->
+        <test-method signature="Test02()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:44 ICT" name="Test02" finished-at="2022-06-25T19:46:46 ICT" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test02 -->
+        <test-method signature="Test03()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:46 ICT" name="Test03" finished-at="2022-06-25T19:46:47 ICT" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test03 -->
+        <test-method signature="Test04()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:47 ICT" name="Test04" finished-at="2022-06-25T19:46:49 ICT" duration-ms="1396" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed to parse the JSON document]]>
+              <![CDATA[expected:<1001> but was:<1002>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at com.tvinh.test1/com.tvinh.test1.LoginTest.getAccessToken(LoginTest.java:180)
-at com.tvinh.test1/com.tvinh.test1.EditTest.TestCase01(EditTest.java:32)
+              <![CDATA[java.lang.AssertionError: expected:<1001> but was:<1002>
+at org.testng@7.6.0/org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng@7.6.0/org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
+at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
+at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
+at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -43,8 +55,8 @@ at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
 at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.tvinh.test1/com.tvinh.test1.EditTest.call(EditTest.java:64)
-at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:57)
+at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
+at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -99,28 +111,21 @@ at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
 at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
 at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
-at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
-at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-... 84 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase01 -->
-      </class> <!-- com.tvinh.test1.EditTest -->
+        </test-method> <!-- Test04 -->
+        <test-method signature="Test05()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:49 ICT" name="Test05" finished-at="2022-06-25T19:46:50 ICT" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test05 -->
+        <test-method signature="Test06()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:50 ICT" name="Test06" finished-at="2022-06-25T19:46:51 ICT" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test06 -->
+      </class> <!-- com.tvinh.test1.LoginTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

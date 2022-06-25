@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 25 18:07:47 ICT 2022</td>
+<td>Started on:</td><td>Sat Jun 25 19:46:35 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2432 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16472 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tvinh.test1.EditTest.TestCase01()'><b>TestCase01</b><br>Test class: com.tvinh.test1.EditTest</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.tvinh.test1/com.tvinh.test1.LoginTest.getAccessToken(LoginTest.java:180)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.TestCase01(EditTest.java:32)
+<td title='com.tvinh.test1.LoginTest.Test04()'><b>Test04</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;1001&gt; but was:&lt;1002&gt;
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.call(EditTest.java:64)
-	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:57)
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
+	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:49)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -135,29 +130,14 @@ function toggleAllBoxes() {
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 84 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245576280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace245576280'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.tvinh.test1/com.tvinh.test1.LoginTest.getAccessToken(LoginTest.java:180)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.TestCase01(EditTest.java:32)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1702532691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702532691'><pre>java.lang.AssertionError: expected:&lt;1001&gt; but was:&lt;1002&gt;
+	at org.testng@7.6.0/org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng@7.6.0/org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
+	at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+	at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
+	at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -181,8 +161,8 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.call(EditTest.java:64)
-	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:57)
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
+	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -237,24 +217,43 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 84 more
 </pre></div></td>
-<td>2</td>
-<td>com.tvinh.test1.EditTest@56df76ca</td></tr>
+<td>1</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tvinh.test1.LoginTest.Test02()'><b>Test02</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
+<tr>
+<td title='com.tvinh.test1.LoginTest.Test06()'><b>Test06</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
+<tr>
+<td title='com.tvinh.test1.LoginTest.Test01()'><b>Test01</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
+<tr>
+<td title='com.tvinh.test1.LoginTest.Test05()'><b>Test05</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
+<tr>
+<td title='com.tvinh.test1.LoginTest.Test03()'><b>Test03</b><br>Test class: com.tvinh.test1.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.tvinh.test1.LoginTest@a846b26</td></tr>
 </table><p>
 </body>
 </html>

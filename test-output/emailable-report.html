@@ -9,20 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,432</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,472</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tvinh.test1.EditTest</td><td><a href="#m0">TestCase01</a></td><td rowspan="1">1656155267291</td><td rowspan="1">2412</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tvinh.test1.LoginTest</td><td><a href="#m0">Test04</a></td><td rowspan="1">1656161207823</td><td rowspan="1">1396</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.tvinh.test1.LoginTest</td><td><a href="#m1">Test01</a></td><td rowspan="1">1656161195526</td><td rowspan="1">9427</td></tr><tr class="passedeven"><td><a href="#m2">Test02</a></td><td rowspan="1">1656161204956</td><td rowspan="1">1445</td></tr><tr class="passedeven"><td><a href="#m3">Test03</a></td><td rowspan="1">1656161206402</td><td rowspan="1">1419</td></tr><tr class="passedeven"><td><a href="#m4">Test05</a></td><td rowspan="1">1656161209220</td><td rowspan="1">1349</td></tr><tr class="passedeven"><td><a href="#m5">Test06</a></td><td rowspan="1">1656161210570</td><td rowspan="1">1392</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.tvinh.test1.EditTest#TestCase01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.tvinh.test1/com.tvinh.test1.LoginTest.getAccessToken(LoginTest.java:180)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.TestCase01(EditTest.java:32)
+<h2>Command line test</h2><h3 id="m0">com.tvinh.test1.LoginTest#Test04</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;1001&gt; but was:&lt;1002&gt;
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.tvinh.test1/com.tvinh.test1.EditTest.call(EditTest.java:64)
-	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:57)
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
+	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:49)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -71,21 +66,11 @@
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 84 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tvinh.test1.LoginTest#Test01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tvinh.test1.LoginTest#Test02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tvinh.test1.LoginTest#Test03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tvinh.test1.LoginTest#Test05</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.tvinh.test1.LoginTest#Test06</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

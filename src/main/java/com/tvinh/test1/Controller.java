@@ -70,7 +70,7 @@ public class Controller implements Initializable {
     }
     public void setApiChoice(ActionEvent event){
         String choice = apiChoice.getValue();
-        if (choice == "Login") api = "Login";
+        if (choice == "Login") api = "login";
         else if (choice == "Sign Up") api = "signup";
         else if (choice == "Edit") api = "edit";
         else if (choice == "Log Out") api = "logout";
