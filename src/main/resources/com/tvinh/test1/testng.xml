@@ -1,0 +1,10 @@
+<suite name = "suite">
+    <test name = "Test">
+        <classes>
+            <class name = "com.tvinh.test1.LoginTest"></class>
+            <class name = "com.tvinh.test1.EditTest"></class>
+            <class name = "com.tvinh.test1.SignUpTest"></class>
+            <class name = "com.tvinh.test1.LogOutTest"></class>
+        </classes>
+    </test>
+</suite>
