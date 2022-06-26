@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,9 +11,10 @@ import io.restassured.response.Response;
 public class Examples {
 
 	@Test 
-	public void test_01() {
+	void test_01() {
 		
 		Response res = RestAssured.get("https://reqres.in/api/users?page=2");
+		System.out.println(res.asString());
 		System.out.println(res.getStatusCode());
 		System.out.println(res.getTime());
 		System.out.println(res.getBody().asString());
@@ -20,7 +23,7 @@ public class Examples {
 		
 		int statusCode = res.getStatusCode();
 		
-		Assert.assertEquals(statusCode, 200);
+		AssertJUnit.assertEquals(statusCode, 200);
 		
 	}
 	

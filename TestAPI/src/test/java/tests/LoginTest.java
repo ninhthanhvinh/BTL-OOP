@@ -1,5 +1,9 @@
 package tests;
 
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertNotNull;
+import static org.testng.AssertJUnit.assertTrue;
+import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -8,7 +12,6 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -33,7 +36,29 @@ public class LoginTest {
 	
 	private final String JSON = "application/json";
 	
-
+	
+	public static String PreTest() {
+		baseURI = "https://auction-app3.herokuapp.com/api";
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		JSONObject req = new JSONObject();
+		req.put("email", "ninhthanhvinh@gmail.com");
+		req.put("password", "123456");
+		
+		Response res = given().contentType(JSON). 
+						body(req.toJSONString()).
+					when().
+						post("/login");
+		JsonPath jpath = res.jsonPath();
+		LinkedHashMap<String, String> data = jpath.get("data");
+		ACCESS_TOKEN = data.get("access_token");
+		
+		return ACCESS_TOKEN;
+		
+}
+	
+	
+	
 	@Test
 	public void Test01() {
 		
@@ -53,6 +78,7 @@ public class LoginTest {
 		then().
 			statusCode(200).extract().response();
 		System.out.println(response.getBody().asString());
+		
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
 		LinkedHashMap<String, String> data = jpath.get("data");
@@ -60,7 +86,7 @@ public class LoginTest {
 		String ACCESS_TOKEN = data.get("access_token");
 		
 		System.out.println(ACCESS_TOKEN);
-		assertEquals(code, 1000);
+		assertEquals(code, Double.valueOf(1000));
 	}
 	@Test
 public void Test02() {
@@ -83,7 +109,7 @@ public void Test02() {
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
 		System.out.println(ACCESS_TOKEN);
-		assertEquals(code, 1001);
+		assertEquals(code, Double.valueOf(1001));
 		}
 	@Test
 	public void Test03() {
@@ -106,7 +132,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1002);
+		assertEquals(code, Double.valueOf(1002));
 	}
 	
 	@Test
@@ -130,7 +156,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1002);
+		assertEquals(code, Double.valueOf(1002));
 	}
 	
 	@Test
@@ -154,7 +180,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1001);
+		assertEquals(code, Double.valueOf(1001));
 	}
 	
 	@Test
@@ -178,7 +204,7 @@ public void Test02() {
 		System.out.println(response.getBody().asString());
 		JsonPath jpath = response.jsonPath();
 		int code = jpath.getInt("code");
-		assertEquals(code, 1001);
+		assertEquals(code, Double.valueOf(1001));
 	}
 	
 }

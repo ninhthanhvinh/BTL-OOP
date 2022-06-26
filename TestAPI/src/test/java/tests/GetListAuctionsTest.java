@@ -1,5 +1,7 @@
-package tests;
+package tests;ụn 
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.*;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertNull;
@@ -33,15 +35,15 @@ public class GetListAuctionsTest {
 		req.put("index", "2");
 		req.put("count", "5");
 		
-		Response res = given().
-						contentType(JSON).
-				       body(req.toJSONString()).
-				       	when().
-				       post("/auctions");
-		res.then().statusCode(200);
-		System.out.println(res.getStatusCode());
-		assertNotNull(res);
+		Response res = given().get("/auctions");
+						
+		res.then().statusCode(404);
+		//System.out.println(res.getStatusCode());
+		AssertJUnit.assertNotNull(res);
+		
+		System.out.println(res.getBody().asString());
 		
 	}
 	
 }
+

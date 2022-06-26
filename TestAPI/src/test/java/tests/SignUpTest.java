@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.Test;
 import java.util.HashMap;
 import org.apache.commons.lang3.RandomStringUtils;
 import java.util.Map;
