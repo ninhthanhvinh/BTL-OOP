@@ -7,6 +7,7 @@ import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class GetListAuctionsByStatusTest {
@@ -20,13 +21,23 @@ public class GetListAuctionsByStatusTest {
 		
 		JSONObject req = new JSONObject();
 		
-		req.put("access_token", ACCESS_TOKEN);
+		//req.put("access_token", ACCESS_TOKEN);
 		req.put("index", "5");
 		req.put("count", "8");
 		
+		given().header("Content-Type", "application/json").
+			contentType(ContentType.JSON).
+			accept(ContentType.JSON).
+			body(req.toJSONString()).
+		when().
+			post("/auctions/listAuctionsByStatus/1").
+		then().
+			statusCode(200);
+		
 		Response res = given().get("/auctions/listAuctionsByStatus/1");
+		
 						
-		res.then().statusCode(500);
+		//res.then().statusCode(200);
 		
 		AssertJUnit.assertNotNull(res);
 	}

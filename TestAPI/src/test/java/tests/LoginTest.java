@@ -34,10 +34,10 @@ public class LoginTest {
 	
 	public static String ACCESS_TOKEN;
 	
-	private final String JSON = "application/json";
+	private static final String JSON = "application/json";
 	
 	
-	public static String PreTest() {
+	public static String getAccessToken() {
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		Map<String, Object> map = new HashMap<String, Object>();
 		
@@ -80,12 +80,13 @@ public class LoginTest {
 		System.out.println(response.getBody().asString());
 		
 		JsonPath jpath = response.jsonPath();
-		int code = jpath.getInt("code");
+		
 		LinkedHashMap<String, String> data = jpath.get("data");
 		
 		String ACCESS_TOKEN = data.get("access_token");
-		
 		System.out.println(ACCESS_TOKEN);
+		
+		int code = jpath.getInt("code");
 		assertEquals(code, Double.valueOf(1000));
 	}
 	@Test

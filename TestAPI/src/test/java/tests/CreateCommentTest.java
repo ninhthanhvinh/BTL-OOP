@@ -36,6 +36,7 @@ public class CreateCommentTest {
 		JsonPath jpath = response.jsonPath();
 		assertNotEquals(jpath.getInt("code"), 1000);
 		*/
+		response.then().statusCode(302);
 		System.out.println(response.getBody().asString());
 		
 	}

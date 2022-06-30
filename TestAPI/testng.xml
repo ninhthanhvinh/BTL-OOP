@@ -3,15 +3,19 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.GetListAutionsByUserTest"/>
-      <class name="tests.GetListAutionsByTypeTest"/>
-      <class name="tests.GetListAuctionsTest"/>
-      <class name="tests.EditTest"/>
-      <class name="tests.Examples"/>
+      <class name="tests.GetListAuctionsByUserTest"/>
+      <class name="tests.EditAccountTest"/>
       <class name="tests.LogOutTest"/>
-      <class name="tests.SignUpTest"/>
+      <class name="tests.EditAuctionsTest"/>
+      <class name="tests.GetListAuctionsByTypeTest"/>
+      <class name="tests.GetListAuctionsByStatusTest"/>
       <class name="tests.LoginTest"/>
-      <class name="tests.GetListAutionsByStatusTest"/>
+      <class name="tests.chiuchiu"/>
+      <class name="tests.CreateCommentTest"/>
+      <class name="tests.GetListAuctionsTest"/>
+      <class name="tests.GetDetailsAuctionsTest"/>
+      <class name="tests.Examples"/>
+      <class name="tests.SignUpTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

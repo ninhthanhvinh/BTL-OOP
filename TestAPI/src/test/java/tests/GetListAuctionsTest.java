@@ -1,4 +1,4 @@
-package tests;ụn 
+package tests;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -9,6 +9,7 @@ import static org.testng.Assert.assertNull;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
@@ -31,17 +32,21 @@ public class GetListAuctionsTest {
 		
 		JSONObject req = new JSONObject();
 		
-		req.put("access_token", ACCESS_TOKEN);
 		req.put("index", "2");
 		req.put("count", "5");
 		
-		Response res = given().get("/auctions");
-						
-		res.then().statusCode(404);
-		//System.out.println(res.getStatusCode());
-		AssertJUnit.assertNotNull(res);
+		given().header("Authorization", "bearer" + ACCESS_TOKEN).
+			contentType(JSON).
+			body(req.toJSONString()).
+		when().
+			post("/auctions"). 
+		then().
+			statusCode(200);
 		
-		System.out.println(res.getBody().asString());
+		Response res = given().get("/auctions");
+		//res.then().statusCode(200);
+		System.out.println(res.getStatusCode());
+		assertNotNull(res);
 		
 	}
 	
