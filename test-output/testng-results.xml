@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-25T19:46:35 ICT" name="Command line suite" finished-at="2022-06-25T19:46:51 ICT" duration-ms="16472">
+  <suite started-at="2022-06-30T20:50:26 ICT" name="Command line suite" finished-at="2022-06-30T20:50:36 ICT" duration-ms="9237">
     <groups>
     </groups>
-    <test started-at="2022-06-25T19:46:35 ICT" name="Command line test" finished-at="2022-06-25T19:46:51 ICT" duration-ms="16472">
+    <test started-at="2022-06-30T20:50:26 ICT" name="Command line test" finished-at="2022-06-30T20:50:36 ICT" duration-ms="9237">
       <class name="com.tvinh.test1.LoginTest">
-        <test-method signature="Test01()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:35 ICT" name="Test01" finished-at="2022-06-25T19:46:44 ICT" duration-ms="9427" status="PASS">
+        <test-method signature="Test01()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:26 ICT" name="Test01" finished-at="2022-06-30T20:50:29 ICT" duration-ms="2982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01 -->
-        <test-method signature="Test02()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:44 ICT" name="Test02" finished-at="2022-06-25T19:46:46 ICT" duration-ms="1445" status="PASS">
+        <test-method signature="Test02()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:29 ICT" name="Test02" finished-at="2022-06-30T20:50:31 ICT" duration-ms="1251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test02 -->
-        <test-method signature="Test03()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:46 ICT" name="Test03" finished-at="2022-06-25T19:46:47 ICT" duration-ms="1419" status="PASS">
+        <test-method signature="Test03()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:31 ICT" name="Test03" finished-at="2022-06-30T20:50:32 ICT" duration-ms="1273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test03 -->
-        <test-method signature="Test04()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:47 ICT" name="Test04" finished-at="2022-06-25T19:46:49 ICT" duration-ms="1396" status="FAIL">
+        <test-method signature="Test04()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:32 ICT" name="Test04" finished-at="2022-06-30T20:50:33 ICT" duration-ms="1271" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<1001> but was:<1002>]]>
@@ -117,11 +117,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test04 -->
-        <test-method signature="Test05()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:49 ICT" name="Test05" finished-at="2022-06-25T19:46:50 ICT" duration-ms="1349" status="PASS">
+        <test-method signature="Test05()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:33 ICT" name="Test05" finished-at="2022-06-30T20:50:35 ICT" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test05 -->
-        <test-method signature="Test06()[pri:0, instance:com.tvinh.test1.LoginTest@a846b26]" started-at="2022-06-25T19:46:50 ICT" name="Test06" finished-at="2022-06-25T19:46:51 ICT" duration-ms="1392" status="PASS">
+        <test-method signature="Test06()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:35 ICT" name="Test06" finished-at="2022-06-30T20:50:36 ICT" duration-ms="1204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test06 -->
