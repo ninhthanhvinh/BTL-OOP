@@ -4,6 +4,8 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import javafx.scene.text.Text;
 import org.json.simple.JSONObject;
+import org.testng.TestListenerAdapter;
+import org.testng.TestNG;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -101,5 +103,13 @@ public class GetNewsTest {
         JsonPath jpath = response.jsonPath();
         int code = jpath.getInt("code");
         assertEquals(code, 1000);
+    }
+
+    public void call(){
+        TestListenerAdapter tla = new TestListenerAdapter();
+        TestNG testng = new TestNG();
+        testng.setTestClasses(new Class[] { GetNewsTest.class });
+        testng.addListener(tla);
+        testng.run();
     }
 }
