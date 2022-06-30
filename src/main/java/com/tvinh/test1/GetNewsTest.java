@@ -17,34 +17,89 @@ public class GetNewsTest {
 
     Map<String, Object> map = new HashMap<String, Object>();
 
-    //String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
+    LoginTest loginTest = new LoginTest();
+    String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
     private final String JSON = "application/json";
 
     @Test
-    public void Test01 () {
+    public void Test01() {
+//        baseURI = AutomationTesting.baseuri;
 
         JSONObject request = new JSONObject();
 
-        //        baseURI = AutomationTesting.baseuri;
-
         baseURI = "https://auction-app3.herokuapp.com/api";
 
-        LoginTest loginTest = new LoginTest();
-
-        String ACCESS_TOKEN = loginTest.getAccessToken();
         request.put("access_token", ACCESS_TOKEN);
-        request.put("index", "5");
-        request.put("count", "8");
+        request.put("index", "10");
+        request.put("count", "10");
 
-        Response response = given().get("/news");
+        Response response = given().header("Authorization","Bearer" + ACCESS_TOKEN).
+                contentType(JSON).
+                body(request.toJSONString()).
+                when().
+                get("/news");
         response.then().statusCode(200);
-
+        System.out.println(response.getStatusCode());
 
         System.out.println(response.getBody().asString());
 
         JsonPath jpath = response.jsonPath();
         int code = jpath.getInt("code");
         assertEquals(code, 1000);
+    }
 
+    @Test
+    public void Test02() {
+//        baseURI = AutomationTesting.baseuri;
+
+        JSONObject request = new JSONObject();
+
+        baseURI = "https://auction-app3.herokuapp.com/api";
+
+        request.put("access_token", ACCESS_TOKEN);
+        request.put("index", "10000");
+        request.put("count", "10");
+
+        Response response = given().header("Authorization", "Bearer" + ACCESS_TOKEN).
+                contentType(JSON).
+                body(request.toJSONString()).
+                when().
+                get("/news");
+        response.then().statusCode(200);
+        System.out.println(response.getStatusCode());
+
+        System.out.println(response.getBody().asString());
+
+        JsonPath jpath = response.jsonPath();
+        int code = jpath.getInt("code");
+        assertEquals(code, 1000);
+    }
+
+
+    @Test
+    public void Test03() {
+//        baseURI = AutomationTesting.baseuri;
+
+        JSONObject request = new JSONObject();
+
+        baseURI = "https://auction-app3.herokuapp.com/api";
+
+        request.put("access_token", ACCESS_TOKEN);
+        request.put("index", "10");
+        request.put("count", "9999999999999999999999999999");
+
+        Response response = given().header("Authorization", "Bearer" + ACCESS_TOKEN).
+                contentType(JSON).
+                body(request.toJSONString()).
+                when().
+                get("/news");
+        response.then().statusCode(200);
+        System.out.println(response.getStatusCode());
+
+        System.out.println(response.getBody().asString());
+
+        JsonPath jpath = response.jsonPath();
+        int code = jpath.getInt("code");
+        assertEquals(code, 1000);
     }
 }
