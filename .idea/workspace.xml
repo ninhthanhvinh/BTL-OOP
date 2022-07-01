@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d0a700-e8f3-43e9-a7b6-ed0dae3ce70d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Read_new.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.tvinh.test1.GetNewsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/DeleteCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/ContactUsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/ContactUsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/CreateBidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/CreateBidTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/GetNewsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/GetNewsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Command line suite/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Command line suite/Command line test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Command line suite/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Command line suite/Command line test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.tvinh.test1.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.tvinh.test1.LoginTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/methods.html" afterDir="false" />
@@ -75,7 +70,7 @@
       <recent name="com.tvinh.test1" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Read_new">
+  <component name="RunManager" selected="TestNG.Read_new.Test01">
     <configuration name="AutomationTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.AutomationTesting" />
       <module name="Test1" />
@@ -89,24 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNewsTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Test1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ReadNewsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadNewsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTest.Test01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Test1" />
       <extension name="coverage">
         <pattern>
@@ -115,24 +93,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tvinh.test1" />
-      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.ReadNewsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadNewsTest.Test01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Test1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tvinh.test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tvinh.test1" />
-      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.ReadNewsTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.ContactUsTest" />
       <option name="METHOD_NAME" value="Test01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -141,7 +102,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Read_new" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteCommentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tvinh.test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tvinh.test1" />
+      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.DeleteCommentTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteCommentTest.Test01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tvinh.test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tvinh.test1" />
+      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.DeleteCommentTest" />
+      <option name="METHOD_NAME" value="Test01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Read_new.Test01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Test1" />
       <extension name="coverage">
         <pattern>
@@ -151,7 +147,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tvinh.test1" />
       <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.Read_new" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="Test01" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -160,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Read_new" />
-        <item itemvalue="TestNG.ReadNewsTest.Test01" />
-        <item itemvalue="TestNG.ReadNewsTest" />
+        <item itemvalue="TestNG.Read_new.Test01" />
+        <item itemvalue="TestNG.DeleteCommentTest" />
+        <item itemvalue="TestNG.ContactUsTest.Test01" />
         <item itemvalue="Application.AutomationTesting" />
-        <item itemvalue="TestNG.ReadNewsTest (1)" />
+        <item itemvalue="TestNG.DeleteCommentTest.Test01" />
       </list>
     </recent_temporary>
   </component>

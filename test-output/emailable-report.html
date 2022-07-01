@@ -9,12 +9,68 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,895</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,275</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.tvinh.test1.GetNewsTest</td><td><a href="#m0">Test01</a></td><td rowspan="1">1656681915868</td><td rowspan="1">3265</td></tr><tr class="passedeven"><td><a href="#m1">Test02</a></td><td rowspan="1">1656681919135</td><td rowspan="1">1342</td></tr><tr class="passedeven"><td><a href="#m2">Test03</a></td><td rowspan="1">1656681920477</td><td rowspan="1">1262</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tvinh.test1.LoginTest</td><td><a href="#m0">Test04</a></td><td rowspan="1">1656685134244</td><td rowspan="1">1255</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.tvinh.test1.LoginTest</td><td><a href="#m1">Test01</a></td><td rowspan="1">1656685128731</td><td rowspan="1">2980</td></tr><tr class="passedeven"><td><a href="#m2">Test02</a></td><td rowspan="1">1656685131712</td><td rowspan="1">1260</td></tr><tr class="passedeven"><td><a href="#m3">Test03</a></td><td rowspan="1">1656685132973</td><td rowspan="1">1271</td></tr><tr class="passedeven"><td><a href="#m4">Test05</a></td><td rowspan="1">1656685135500</td><td rowspan="1">1244</td></tr><tr class="passedeven"><td><a href="#m5">Test06</a></td><td rowspan="1">1656685136745</td><td rowspan="1">1238</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.tvinh.test1.GetNewsTest#Test01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.tvinh.test1.GetNewsTest#Test02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.tvinh.test1.GetNewsTest#Test03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">com.tvinh.test1.LoginTest#Test04</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;1001&gt; but was:&lt;1002&gt;
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
+	at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:50)
+	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
+	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
+	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
+	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
+	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tvinh.test1.LoginTest#Test01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tvinh.test1.LoginTest#Test02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tvinh.test1.LoginTest#Test03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tvinh.test1.LoginTest#Test05</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.tvinh.test1.LoginTest#Test06</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

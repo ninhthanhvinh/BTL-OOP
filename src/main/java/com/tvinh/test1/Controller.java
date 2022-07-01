@@ -38,7 +38,8 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         uriChoice.getItems().addAll("heroku2", "heroku3");
         uriChoice.setOnAction(this::setUriChoice);
-        apiChoice.getItems().addAll("Login", "Edit", "Sign Up", "Log Out", "Contact Us", "Get News", "Read News");
+        apiChoice.getItems().addAll("Login", "Edit", "Sign Up", "Log Out", "Contact Us", "Get News",
+                "Read News", "Delete Comment");
         apiChoice.setOnAction(this::setApiChoice);
         staticTxtArea = textAreaGUI;
     }
@@ -68,6 +69,14 @@ public class Controller implements Initializable {
             GetNewsTest lot = new GetNewsTest();
             lot.call();
         }
+        else if (Objects.equals(api, "news/read/{newId}")){
+            Read_new lot = new Read_new();
+            lot.call();
+        }
+        else if (Objects.equals(api, "comments/{commentId}")){
+            Read_new lot = new Read_new();
+            lot.call();
+        }
 
 
     }
@@ -86,5 +95,6 @@ public class Controller implements Initializable {
         else if (choice == "Contact Us") api = "contactUs";
         else if (choice == "Get News") api = "news";
         else if (choice == "Read News") api = "news/read/{newId}";
+        else if (choice == "Delete Comment") api = "comments/{commentId}";
     }
 }

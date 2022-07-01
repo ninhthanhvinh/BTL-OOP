@@ -2,6 +2,7 @@ package com.tvinh.test1;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -31,17 +32,18 @@ public class Read_new {
         LoginTest loginTest = new LoginTest();
         String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
 
-        Response res = given().header("Authorization", "bearer" + ACCESS_TOKEN).
+        Response response = given().header("Authorization", "bearer" + ACCESS_TOKEN).
                 contentType(JSON).
                 with().
                 pathParam("newId", 1).
                 when().
                 get("/news/read/{newId}");
-        res.then().statusCode(200);
 
-        JsonPath jpath = res.jsonPath();
-        LinkedHashMap<String, String> data = jpath.get("data");
-        System.out.println(data);
+        System.out.println(response.getBody().asString());
+
+        JsonPath jpath = response.jsonPath();
+        int code = jpath.getInt("code");
+        assertEquals(code, 1000);
     }
 
     public void call(){
