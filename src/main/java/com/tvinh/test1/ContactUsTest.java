@@ -55,6 +55,7 @@ public class ContactUsTest {
         JsonPath jpath = response.jsonPath();
         int code = jpath.getInt("code");
         assertEquals(code, 1000);
+
     }
     public void call(){
         TestListenerAdapter tla = new TestListenerAdapter();

@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d0a700-e8f3-43e9-a7b6-ed0dae3ce70d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

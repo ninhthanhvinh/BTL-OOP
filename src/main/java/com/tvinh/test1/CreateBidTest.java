@@ -49,6 +49,7 @@ public class CreateBidTest {
         int code = jpath.getInt("code");
         Assert.assertEquals(code, 1000);
     }
+
 }
 
 

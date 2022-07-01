@@ -96,5 +96,6 @@ public class Controller implements Initializable {
         else if (choice == "Get News") api = "news";
         else if (choice == "Read News") api = "news/read/{newId}";
         else if (choice == "Delete Comment") api = "comments/{commentId}";
+        
     }
 }
