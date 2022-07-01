@@ -23,8 +23,8 @@ public class ContactUsTest {
     Map<String, Object> map = new HashMap<String, Object>();
     Map<Text, Object> map1 = new HashMap<Text, Object>();
 
-    public static String ACCESS_TOKEN;
-    //String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
+//    public static String ACCESS_TOKEN;
+//    String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
     private final String JSON = "application/json";
 
     @Test
@@ -35,11 +35,13 @@ public class ContactUsTest {
 
         baseURI = "https://auction-app3.herokuapp.com/api";
 
-        request.put("access_token", ACCESS_TOKEN);
+        Text t1 = new Text("1");
+
+        request.put("access_token", null);
         request.put("name", "vinh");
         request.put("phone", "090445554");
         request.put("email", "ninhthanhvinh1@gmail.com");
-        request.put("content", "chan vl");
+        request.put("content", t1);
         request.put("file", null);
         request.put("report_type:", "1");
 

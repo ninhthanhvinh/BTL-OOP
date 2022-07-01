@@ -1,131 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T20:50:26 ICT" name="Command line suite" finished-at="2022-06-30T20:50:36 ICT" duration-ms="9237">
+  <suite started-at="2022-07-01T20:25:15 ICT" name="Command line suite" finished-at="2022-07-01T20:25:21 ICT" duration-ms="5895">
     <groups>
     </groups>
-    <test started-at="2022-06-30T20:50:26 ICT" name="Command line test" finished-at="2022-06-30T20:50:36 ICT" duration-ms="9237">
-      <class name="com.tvinh.test1.LoginTest">
-        <test-method signature="Test01()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:26 ICT" name="Test01" finished-at="2022-06-30T20:50:29 ICT" duration-ms="2982" status="PASS">
+    <test started-at="2022-07-01T20:25:15 ICT" name="Command line test" finished-at="2022-07-01T20:25:21 ICT" duration-ms="5895">
+      <class name="com.tvinh.test1.GetNewsTest">
+        <test-method signature="Test01()[pri:0, instance:com.tvinh.test1.GetNewsTest@1dc169a2]" started-at="2022-07-01T20:25:15 ICT" name="Test01" finished-at="2022-07-01T20:25:19 ICT" duration-ms="3265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01 -->
-        <test-method signature="Test02()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:29 ICT" name="Test02" finished-at="2022-06-30T20:50:31 ICT" duration-ms="1251" status="PASS">
+        <test-method signature="Test02()[pri:0, instance:com.tvinh.test1.GetNewsTest@1dc169a2]" started-at="2022-07-01T20:25:19 ICT" name="Test02" finished-at="2022-07-01T20:25:20 ICT" duration-ms="1342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test02 -->
-        <test-method signature="Test03()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:31 ICT" name="Test03" finished-at="2022-06-30T20:50:32 ICT" duration-ms="1273" status="PASS">
+        <test-method signature="Test03()[pri:0, instance:com.tvinh.test1.GetNewsTest@1dc169a2]" started-at="2022-07-01T20:25:20 ICT" name="Test03" finished-at="2022-07-01T20:25:21 ICT" duration-ms="1262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test03 -->
-        <test-method signature="Test04()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:32 ICT" name="Test04" finished-at="2022-06-30T20:50:33 ICT" duration-ms="1271" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<1001> but was:<1002>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<1001> but was:<1002>
-at org.testng@7.6.0/org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-at org.testng@7.6.0/org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
-at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
-at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
-at org.testng@7.6.0/org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
-at com.tvinh.test1/com.tvinh.test1.LoginTest.Test04(LoginTest.java:109)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.tvinh.test1/com.tvinh.test1.LoginTest.call(LoginTest.java:161)
-at com.tvinh.test1/com.tvinh.test1.Controller.Test(Controller.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
-at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
-at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-at javafx.graphics@18/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
-at javafx.graphics@18/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test04 -->
-        <test-method signature="Test05()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:33 ICT" name="Test05" finished-at="2022-06-30T20:50:35 ICT" duration-ms="1228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test05 -->
-        <test-method signature="Test06()[pri:0, instance:com.tvinh.test1.LoginTest@51330413]" started-at="2022-06-30T20:50:35 ICT" name="Test06" finished-at="2022-06-30T20:50:36 ICT" duration-ms="1204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test06 -->
-      </class> <!-- com.tvinh.test1.LoginTest -->
+      </class> <!-- com.tvinh.test1.GetNewsTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>
