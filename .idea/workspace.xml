@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d0a700-e8f3-43e9-a7b6-ed0dae3ce70d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Read_new.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Read_new.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/ContactUsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tvinh/test1/CreateBidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/ContactUsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/ContactUsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/DeleteCommentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/DeleteCommentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Read_new.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/Read_new.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tvinh/test1/CreateBidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tvinh/test1/CreateBidTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +62,7 @@
       <recent name="com.tvinh.test1" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Read_new.Test02">
-    <configuration name="AutomationTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.AutomationTesting" />
-      <module name="Test1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tvinh.test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CreateBidTest">
     <configuration name="ContactUsTest.Test01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Test1" />
       <extension name="coverage">
@@ -87,6 +75,23 @@
       <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.ContactUsTest" />
       <option name="METHOD_NAME" value="Test01" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateBidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tvinh.test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tvinh.test1" />
+      <option name="MAIN_CLASS_NAME" value="com.tvinh.test1.CreateBidTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -148,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateBidTest" />
+        <item itemvalue="TestNG.ContactUsTest.Test01" />
         <item itemvalue="TestNG.Read_new.Test02" />
         <item itemvalue="TestNG.Read_new.Test01" />
         <item itemvalue="TestNG.DeleteCommentTest" />
-        <item itemvalue="TestNG.ContactUsTest.Test01" />
-        <item itemvalue="Application.AutomationTesting" />
       </list>
     </recent_temporary>
   </component>

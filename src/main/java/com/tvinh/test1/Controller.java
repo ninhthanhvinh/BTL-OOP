@@ -86,6 +86,7 @@ public class Controller implements Initializable {
         if (choice == "heroku2") baseuri = "https://auction-app-2.herokuapp.com/api";
         else baseuri = "https://auction-app3.herokuapp.com/api";
     }
+
     public void setApiChoice(ActionEvent event){
         String choice = apiChoice.getValue();
         if (choice == "Login") api = "login";
@@ -96,6 +97,6 @@ public class Controller implements Initializable {
         else if (choice == "Get News") api = "news";
         else if (choice == "Read News") api = "news/read/{newId}";
         else if (choice == "Delete Comment") api = "comments/{commentId}";
-        
+
     }
 }

@@ -37,7 +37,6 @@ public class ContactUsTest {
 
         Text t1 = new Text("1");
 
-        request.put("access_token", null);
         request.put("name", "vinh");
         request.put("phone", "090445554");
         request.put("email", "ninhthanhvinh1@gmail.com");
@@ -48,7 +47,6 @@ public class ContactUsTest {
         Response response = given().
                 post("/contactUs");
         response.then().statusCode(200);
-        System.out.println(response.getStatusCode());
 
         System.out.println(response.getBody().asString());
 

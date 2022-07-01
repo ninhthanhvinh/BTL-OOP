@@ -16,14 +16,13 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertEquals;
 
 public class CreateBidTest {
 
     Map<String, Object> map = new HashMap<String, Object>();
 
-    LoginTest loginTest = new LoginTest();
-    String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
     private final String JSON = "application/json";
 
     @Test
@@ -33,21 +32,29 @@ public class CreateBidTest {
         JSONObject request = new JSONObject();
 
         baseURI = "https://auction-app3.herokuapp.com/api";
+        LoginTest loginTest = new LoginTest();
+        String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
 
-        request.put("access_token", ACCESS_TOKEN);
-        request.put("price", (int) 1);
-        request.put("bid_last_id", (int) 1);
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        request.put("price", 10000);
+        request.put("bid_last_id", a);
 
         Response response = given().
-                post("/bids/create/1");
-        response.then().statusCode(200);
+                header("Authorization", "Bearer"+ /*ACCESS_TOKEN*/
+                        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9uLWFwcDMuaGVyb2t1YXBwLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NjM4MDE3NiwiZXhwIjoxNjU2NzQwMTc2LCJuYmYiOjE2NTYzODAxNzYsImp0aSI6ImhKUnN5ekhHWFFESXBpa20iLCJzdWIiOjY1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.M5keGqBHO6E7l4obs2U1QIwwmhPX5joAk6t15v2Psck").
+                contentType(JSON).
+                with().
+                pathParam("auctionId", 100).
+                when().
+                post("/bids/create/{auctionId}");
+
         System.out.println(response.getStatusCode());
 
         System.out.println(response.getBody().asString());
 
         JsonPath jpath = response.jsonPath();
         int code = jpath.getInt("code");
-        Assert.assertEquals(code, 1000);
+        assertEquals(code, 1000);
     }
 
 }
