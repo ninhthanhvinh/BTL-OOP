@@ -46,6 +46,31 @@ public class Read_new {
         assertEquals(code, 1000);
     }
 
+    @Test
+    public void Test02() {
+//        baseURI = AutomationTesting.baseuri;
+
+        JSONObject request = new JSONObject();
+
+        baseURI = "https://auction-app3.herokuapp.com/api";
+
+        LoginTest loginTest = new LoginTest();
+        String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
+
+        Response response = given().header("Authorization", "bearer" + ACCESS_TOKEN).
+                contentType(JSON).
+                with().
+                pathParam("newId", 1).
+                when().
+                get("/news/read/{newId}");
+
+        response.then().statusCode(200);
+        System.out.println(response.getBody().asString());
+
+        JsonPath jpath = response.jsonPath();
+        int code = jpath.getInt("code");
+        assertEquals(code, 1000);
+    }
     public void call(){
         TestListenerAdapter tla = new TestListenerAdapter();
         TestNG testng = new TestNG();
