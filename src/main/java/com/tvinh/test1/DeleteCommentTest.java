@@ -75,4 +75,28 @@ public class DeleteCommentTest {
         testng.addListener(tla);
         testng.run();
     }
+
+    @Test
+    public void Test03() {
+//        baseURI = AutomationTesting.baseuri;
+
+        baseURI = "https://auction-app3.herokuapp.com/api";
+
+        LoginTest loginTest = new LoginTest();
+        String ACCESS_TOKEN = LoginTest.ACCESS_TOKEN;
+
+        Response response = given().
+                header("authorization", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9uLWFwcDMuaGVyb2t1YXBwLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NjM4MDE3NiwiZXhwIjoxNjU2NzQwMTc2LCJuYmYiOjE2NTYzODAxNzYsImp0aSI6ImhKUnN5ekhHWFFESXBpa20iLCJzdWIiOjY1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.M5keGqBHO6E7l4obs2U1QIwwmhPX5joAk6t15v2Psck").
+                contentType(JSON).
+                with().
+                pathParam("commentId", 1).
+                when().
+                post("/comments/{commentId}");
+
+        System.out.println(response.getBody().asString());
+        JsonPath jpath = response.jsonPath();
+        int code = jpath.getInt("code");
+        assertEquals(code, 1000);
+    }
+
 }
