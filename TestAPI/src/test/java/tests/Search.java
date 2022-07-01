@@ -25,18 +25,17 @@ public class Search {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("type", "1");
-		request.put("key", "car");
-		
-		given().
-			contentType(JSON).
-			body(request.toJSONString()).
+		Response response = given().
+			accept(JSON).
+			queryParam("index", "1").
+			queryParam("key", "car").
 		when().
-			post("/search");
-		Response response = given().get("/search");
+			get("/search");
+		
 		response.then().statusCode(200);
 		
 		JsonPath jpath = response.jsonPath();
+		System.out.println(jpath.get("data"));
 		assertEquals(jpath.getInt("code"), 9998);
 	}
 	
@@ -46,18 +45,17 @@ public class Search {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("type", "2");
-		request.put("key", "car");
-		
-		given().
-			contentType(JSON).
-			body(request.toJSONString()).
+		Response response = given().
+			accept(JSON).
+			queryParam("index", "2").
+			queryParam("key", "car").
 		when().
-			post("/search");
-		Response response = given().get("/search");
+			get("/search");
+		
 		response.then().statusCode(200);
 		
 		JsonPath jpath = response.jsonPath();
+		System.out.println(jpath.get("data"));
 		assertEquals(jpath.getInt("code"), 9998);
 	}
 	
@@ -67,18 +65,17 @@ public class Search {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("type", "3");
-		request.put("key", "car");
-		
-		given().
-			contentType(JSON).
-			body(request.toJSONString()).
+		Response response = given().
+			accept(JSON).
+			queryParam("index", "3").
+			queryParam("key", "car").
 		when().
-			post("/search");
-		Response response = given().get("/search");
+			get("/search");
+		
 		response.then().statusCode(200);
 		
 		JsonPath jpath = response.jsonPath();
+		System.out.println(jpath.get("data"));
 		assertEquals(jpath.getInt("code"), 9998);
 	}
 	
@@ -88,27 +85,18 @@ public class Search {
 		
 		baseURI = "https://auction-app3.herokuapp.com/api";
 		
-		request.put("type", "4");
-		request.put("key", "car");
-		
-		given().
-			contentType(JSON).
-			body(request.toJSONString()).
+		Response response = given().
+			accept(JSON).
+			queryParam("index", "4").
+			queryParam("key", "car").
 		when().
-			post("/search");
-		Response response = given().get("/search");
+			get("/search");
+		
 		response.then().statusCode(200);
 		
 		JsonPath jpath = response.jsonPath();
+		System.out.println(jpath.get("data"));
 		assertEquals(jpath.getInt("code"), 9998);
 	}
-	
-	public void call(){
-        TestListenerAdapter tla = new TestListenerAdapter();
-        TestNG testng = new TestNG();
-        testng.setTestClasses(new Class[] { Search.class });
-        testng.addListener(tla);
-        testng.run();
-    }
 	
 }

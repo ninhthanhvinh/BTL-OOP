@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T17:26:51 ICT" name="Default suite" finished-at="2022-06-30T17:26:53 ICT" duration-ms="2716">
+  <suite started-at="2022-07-01T09:44:31 ICT" name="Default suite" finished-at="2022-07-01T09:44:37 ICT" duration-ms="5941">
     <groups>
     </groups>
-    <test started-at="2022-06-30T17:26:51 ICT" name="Default test" finished-at="2022-06-30T17:26:53 ICT" duration-ms="2716">
-      <class name="tests.Get_list_categories">
-        <test-method signature="Test01()[pri:0, instance:tests.Get_list_categories@50eac852]" started-at="2022-06-30T17:26:51 ICT" name="Test01" finished-at="2022-06-30T17:26:53 ICT" duration-ms="2673" status="FAIL">
+    <test started-at="2022-07-01T09:44:31 ICT" name="Default test" finished-at="2022-07-01T09:44:37 ICT" duration-ms="5941">
+      <class name="tests.Read_new">
+        <test-method signature="Test01()[pri:0, instance:tests.Read_new@16ec5519]" started-at="2022-07-01T09:44:31 ICT" name="Test01" finished-at="2022-07-01T09:44:37 ICT" duration-ms="5895" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -52,7 +52,7 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at tests.Get_list_categories.Test01(Get_list_categories.java:31)
+at tests.Read_new.Test01(Read_new.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01 -->
-      </class> <!-- tests.Get_list_categories -->
+      </class> <!-- tests.Read_new -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
